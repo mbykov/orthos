@@ -1,0 +1,17 @@
+{
+  "name": "orthos",
+    "repo": "mbykov/orthos",
+    "description": "corrects greek utf-8 from precombined to combining diacriticals",
+    "version": "0.0.1",
+    "keywords": [
+        "greek",
+        "node.js",
+        "morphology"
+    ],
+    "license": "GPL",
+    "main": "index.js",
+    "scripts": [
+        "index.js"
+    ],
+    "remotes": []
+}

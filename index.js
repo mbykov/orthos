@@ -30,6 +30,26 @@ orthos.prototype.plain = function(str) {
     return plains.join('')
 }
 
+orthos.prototype.correctAccent = function(str) {
+    let cleans = []
+    let exists = false
+    str.split('').forEach(function(sym) {
+        if (exists && [ac.oxia, ac.peris].includes(sym)) return
+        if ([ac.oxia, ac.peris].includes(sym)) exists = true
+        cleans.push(sym)
+    })
+    return cleans.join('')
+}
+
+// orthos.prototype.run = function(str) {
+//     for (let s in c) {
+//         if (!s) continue;
+//         str = str.replace(s, c[s]);
+//     }
+//     return str;
+// }
+
+
 // downcase
 orthos.prototype.dc = function(str) {
     let dcs = []

@@ -1,41 +1,32 @@
-# sanote.js
+# orthos.js
 
-converter of sanskrit morphological notation from traditional to european and vise versa
+corrects utf-8 combined greek diacritics from precombined of all sorts
 
 
 ## Installation
 
-Deprecated:
-With [component](http://github.com/component/component)
-
-
 ## API
 
 ````javascript
-var sanote = require('./sanote');
+    var orthos = require('./orthos');
 ````
 
 three methods:
 
-from morph object to traditional notation:
+convert string to combined version
 
 ````javascript
-    let mstr = sanote.tohi(object);
-    ->  नपु॰, एक॰: प्र॰, द्वि॰
+    let combined = orthos.toComb(rawStr)
 ````
-
-from traditional to european notation:
+get plain string, i.e. without only stress symbols
 
 ````javascript
-    let text = 'नपु॰, एक॰: प्र॰, द्वि॰';
-    let tiptext = sanote.toeu(text);
-    -> neut. sg.: nom., acc
+    let plain = orthos.plain(combined)
 ````
-
-from european to traditional notation:
+downcase symbol
 
 ````javascript
-    to be done
+    let downcased = orthos.dc(sym)
 ````
 
 

@@ -1,16 +1,11 @@
-// convert greek utf-8 to and from tona, oxia, precombined
+// convert greek utf-8 to and from tonos and oxia, precombined
 
 let comb = require('./lib/comb');
 let c = comb.combined;
 let ac = comb.accents;
-// let plains = comb.plains;
-// let oxia = comb.oxia;
 let dc = comb.downcase;
 
-// пока что я убираю барию совсем
-
-
-let stresses = ['́'];
+// barias replaced complitely
 
 module.exports = orthos();
 
@@ -35,47 +30,6 @@ orthos.prototype.plain = function(str) {
     return plains.join('')
 }
 
-orthos.prototype.correctAccent = function(str) {
-    let cleans = []
-    let exists = false
-    str.split('').forEach(function(sym) {
-        if (exists && [ac.oxia, ac.peris].includes(sym)) return
-        if ([ac.oxia, ac.peris].includes(sym)) exists = true
-        cleans.push(sym)
-    })
-    return cleans.join('')
-}
-
-orthos.prototype.run = function(str) {
-    for (let s in c) {
-        if (!s) continue;
-        str = str.replace(s, c[s]);
-    }
-    return str;
-}
-
-// oxia to tonos
-// orthos.prototype.oxia2tonos = function(str) {
-//     for (let s in oxia) {
-//         if (!s) continue;
-//         str = str.replace(s, oxia[s]);
-//     }
-//     log('O', str);
-//     return str;
-// }
-
-// str without stress symbol(s)
-// orthos.prototype.rough = function(str) {
-//     let syms = str.split('');
-//     let cleans = [];
-//     for (let s of syms) {
-//         if (stresses.includes(s)) continue;
-//         if (c[s]) cleans.push(c[s]);
-//         else cleans.push(s);
-//     }
-//     return cleans.join('');
-// }
-
 // downcase
 orthos.prototype.dc = function(str) {
     let dcs = []
@@ -86,14 +40,6 @@ orthos.prototype.dc = function(str) {
     return dcs.join('')
 }
 
-orthos.prototype.ac = ac
-
-orthos.prototype.xxx = function(str) {
-}
 
 
 function log() { console.log.apply(console, arguments); }
-
-function inc(arr, item) {
-    return (arr.indexOf(item) > -1) ? true : false;
-}

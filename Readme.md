@@ -1,6 +1,6 @@
 # orthos.js
 
-corrects utf-8 combined greek diacritics from precombined of all sorts
+convert to utf-8 combined ancient greek diacritics from precombined of all sorts
 
 
 ## Installation

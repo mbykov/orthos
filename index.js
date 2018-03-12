@@ -22,12 +22,23 @@ orthos.prototype.toComb = function(str) {
 }
 
 orthos.prototype.plain = function(str) {
-    let plains = []
-    str.split('').forEach(function(sym) {
-        if ([ac.oxia, ac.peris].includes(sym)) return
-        plains.push(sym)
-     })
-    return plains.join('')
+  let plains = []
+  str.split('').forEach(function(sym) {
+    if ([ac.oxia, ac.peris, ac.psili, ac.dasia, ac.ypo].includes(sym)) return // ? тонкое придыхание-psili - убрал, густое-dasia тоже
+    // if ([ac.oxia, ac.peris].includes(sym)) return //  придыхания остаются
+    plains.push(sym)
+  })
+  return plains.join('')
+}
+
+orthos.prototype.woStress = function(str) {
+  let plains = []
+  str.split('').forEach(function(sym) {
+    // if ([ac.oxia, ac.peris, ac.psili, ac.dasia, ac.ypo].includes(sym)) return // ? тонкое придыхание-psili - убрал, густое-dasia тоже
+    if ([ac.oxia, ac.peris].includes(sym)) return //  придыхания остаются
+    plains.push(sym)
+  })
+  return plains.join('')
 }
 
 orthos.prototype.correctAccent = function(str) {

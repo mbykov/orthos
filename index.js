@@ -5,8 +5,6 @@ let c = comb.combined;
 let ac = comb.accents;
 let dc = comb.downcase;
 
-// barias replaced complitely
-
 module.exports = orthos();
 
 function orthos() {
@@ -28,6 +26,12 @@ orthos.prototype.plain = function(str) {
     plains.push(sym)
   })
   return plains.join('')
+}
+
+orthos.prototype.cplain = function(str) {
+  // let dc = orthos.prototype.dc(str)
+  let comb = orthos.prototype.toComb(str)
+  return orthos.prototype.plain(comb)
 }
 
 orthos.prototype.woStress = function(str) {

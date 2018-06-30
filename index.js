@@ -64,13 +64,21 @@ orthos.prototype.correctAccent = function(str) {
 
 
 // downcase
-orthos.prototype.dc = function(str) {
+orthos.prototype.alldc = function(str) {
     let dcs = []
     str.split('').forEach(function(sym) {
         if (dc[sym]) dcs.push(dc[sym])
         else dcs.push(sym)
     })
     return dcs.join('')
+}
+
+// first downcase
+orthos.prototype.downcase = function(str) {
+  let dcs = str.split('')
+  let first = str[0]
+  if (dc[first]) dcs[0] = dc[first]
+  return dcs.join('')
 }
 
 

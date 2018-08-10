@@ -1,28 +1,45 @@
 {
-    "name": "orthos",
-    "version": "0.3.41",
-    "description": "convert to utf-8 combined ancient greek diacritics from precombined of all sorts",
-    "main": "index.js",
-    "scripts": {
-        "test": "make test"
-    },
-    "repository": {
-        "type": "git",
-        "url": "http://github.com/mbykov/orthos.git"
-    },
-    "keywords": [
-        "greek",
+  "name": "orthos",
+  "version": "0.3.45",
+  "description": "convert to utf-8 combined ancient greek diacritics from precombined of all sorts",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "npm run build && node dist/run",
+    "prebuild": "npm run clean",
+    "build": "cross-env NODE_ENV=production babel -s true src -d dist",
+    "clean": "rm -rf dist",
+    "run": "node dist/run",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src test"
+  },
+ "keywords": [
+        "ancient greek",
         "node.js",
-        "precombined",
         "morphology"
     ],
-    "author": "Michael Bykov",
-    "license": "GNU GPL",
-    "bugs": {
-        "url": "https://github.com/mbykov/orthos/issues"
-    },
-    "devDependencies": {
-        "mocha": "*",
-        "should": "*"
-    }
+  "author": "Michael Bykov",
+  "license": "GNU GPL",
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "lodash": "^4.17.10"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "cross-env": "^5.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/mbykov/orthos.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mbykov/antrax/issues"
+  }
 }

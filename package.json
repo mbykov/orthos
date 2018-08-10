@@ -12,13 +12,13 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint src test"
   },
- "keywords": [
-        "ancient greek",
-        "node.js",
-        "morphology"
-    ],
+  "keywords": [
+    "ancient greek",
+    "node.js",
+    "morphology"
+  ],
   "author": "Michael Bykov",
-  "license": "GNU GPL",
+  "license": " GPL-2.0-or-later",
   "babel": {
     "presets": [
       "env"

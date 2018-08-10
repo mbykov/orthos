@@ -18,6 +18,8 @@ export const ac = {
   '': ''
 }
 
+export const tobedel = [ac.varia, ac.oxia, ac.peris, ac.psili, ac.dasia, ac.ypo] // dialitika remains
+
 export const simple = {
 
   'α': {utf: 'U+03B1'}, // small letter alpha
@@ -235,8 +237,8 @@ export const greek = {
   'ᾭ': {plain: 'ω', comb: ['ω', ac.dasia, ac.oxia, ac.pros].join(''), utf: 'U+1FAD'}, // capital omega with dasia and oxia and prosgegrammeni
   'ᾮ': {plain: 'ω', comb: ['ω', ac.psili, ac.peris, ac.pros].join(''), utf: 'U+1FAE'}, // capital omega with psili and perispomeni and prosgegrammeni
   'ᾯ': {plain: 'ω', comb: ['ω', ac.dasia, ac.peris, ac.pros].join(''), utf: 'U+1FAF'}, // capital omega with dasia and perispomeni and prosgegrammeni
-'ᾰ': {plain: 'α', comb: ['α'].join(''), utf: 'U+1FB0'}, // small alpha with vrachy
-'ᾱ': {plain: 'α', comb: ['α'].join(''), utf: 'U+1FB1'}, // small alpha with macron
+  'ᾰ': {plain: 'α', comb: ['α'].join(''), utf: 'U+1FB0'}, // small alpha with vrachy
+  'ᾱ': {plain: 'α', comb: ['α'].join(''), utf: 'U+1FB1'}, // small alpha with macron
   'ᾲ': {plain: 'α', comb: ['α', ac.varia, ac.ypo].join(''), utf: 'U+1FB2'}, // small alpha with varia and ypogegrammeni
   'ᾳ': {plain: 'α', comb: ['α', ac.ypo].join(''), utf: 'U+1FB3'}, // small alpha with ypogegrammeni
   'ᾴ': {plain: 'α', comb: ['α', ac.oxia, ac.ypo].join(''), utf: 'U+1FB4'}, // small alpha with oxia and ypogegrammeni
@@ -267,10 +269,10 @@ export const greek = {
 // '῏': {plain: '', comb: ['', ac.psili, ac.peris].join(''), utf: 'U+1FCF'}, // psili and perispomeni
 'ῐ': {plain: 'ι', comb: ['ι'].join(''), utf: 'U+1FD0'}, // small iota with vrachy
 'ῑ': {plain: 'ι', comb: ['ι'].join(''), utf: 'U+1FD1'}, // small iota with macron
-  'ῒ': {plain: 'ι', comb: ['ι', ac.varia].join(''), utf: 'U+1FD2'}, // small iota with dialytika and varia
-  'ΐ': {plain: 'ι', comb: ['ι', ac.oxia].join(''), utf: 'U+1FD3'}, // small iota with dialytika and oxia
+  'ῒ': {plain: ['ι', ac.dia].join(''), comb: ['ι', ac.dia, ac.varia].join(''), utf: 'U+1FD2'}, // small iota with dialytika and varia
+  'ΐ': {plain: ['ι', ac.dia].join(''), comb: ['ι', ac.dia, ac.oxia].join(''), utf: 'U+1FD3'}, // small iota with dialytika and oxia
   'ῖ': {plain: 'ι', comb: ['ι', ac.peris].join(''), utf: 'U+1FD6'}, // small iota with perispomeni
-  'ῗ': {plain: 'ι', comb: ['ι', ac.peris].join(''), utf: 'U+1FD7'}, // small iota with dialytika and perispomeni
+  'ῗ': {plain: ['ι', ac.dia].join(''), comb: ['ι', ac.dia, ac.peris].join(''), utf: 'U+1FD7'}, // small iota with dialytika and perispomeni
 'Ῐ': {plain: 'ι', comb: ['ι'].join(''), utf: 'U+1FD8'}, // capital iota with vrachy
 'Ῑ': {plain: 'ι', comb: ['ι'].join(''), utf: 'U+1FD9'}, // capital iota with macron
   'Ὶ': {plain: 'ι', comb: ['ι', ac.varia].join(''), utf: 'U+1FDA'}, // capital iota with varia
@@ -280,12 +282,12 @@ export const greek = {
 // '῟': {plain: '', comb: ['', ac.dasia, ac.peris].join(''), utf: 'U+1FDF'}, // dasia and perispomeni
 'ῠ': {plain: 'υ', comb: ['υ'].join(''), utf: 'U+1FE0'}, // small upsilon with vrachy
 'ῡ': {plain: 'υ', comb: ['υ'].join(''), utf: 'U+1FE1'}, // small upsilon with macron
-  'ῢ': {plain: 'υ', comb: ['υ', ac.varia].join(''), utf: 'U+1FE2'}, // small upsilon with dialytika and varia
-  'ΰ': {plain: 'υ', comb: ['υ', ac.oxia].join(''), utf: 'U+1FE3'}, // small upsilon with dialytika and oxia
+  'ῢ': {plain: ['υ', ac.dia].join(''), comb: ['υ', ac.dia, ac.varia].join(''), utf: 'U+1FE2'}, // small upsilon with dialytika and varia
+  'ΰ': {plain: ['υ', ac.dia], comb: ['υ', ac.dia, ac.oxia].join(''), utf: 'U+1FE3'}, // small upsilon with dialytika and oxia
   'ῤ': {plain: 'ρ', comb: ['ρ', ac.psili].join(''), utf: 'U+1FE4'}, // small rho with psili
   'ῥ': {plain: 'ρ', comb: ['ρ', ac.dasia].join(''), utf: 'U+1FE5'}, // small rho with dasia
   'ῦ': {plain: 'υ', comb: ['υ', ac.peris].join(''), utf: 'U+1FE6'}, // small upsilon with perispomeni
-  'ῧ': {plain: 'υ', comb: ['υ', ac.peris].join(''), utf: 'U+1FE7'}, // small upsilon with dialytika and perispomeni
+  'ῧ': {plain: ['υ', ac.dia], comb: ['υ', ac.dia, ac.peris].join(''), utf: 'U+1FE7'}, // small upsilon with dialytika and perispomeni
 'Ῠ': {plain: 'υ', comb: ['υ'].join(''), utf: 'U+1FE8'}, // capital upsilon with vrachy
 'Ῡ': {plain: 'υ', comb: ['υ'].join(''), utf: 'U+1FE9'}, // capital upsilon with macron
   'Ὺ': {plain: 'υ', comb: ['υ', ac.varia].join(''), utf: 'U+1FEA'}, // capital upsilon with varia
@@ -315,18 +317,18 @@ export const greek = {
   'Ό': {plain: 'ο', comb: ['ο', ac.oxia].join(''), utf: 'U+038C'}, // capital omicron with tonos
   'Ύ': {plain: 'υ', comb: ['υ', ac.oxia].join(''), utf: 'U+038E'}, // capital upsilon with tonos
   'Ώ': {plain: 'ω', comb: ['ω', ac.oxia].join(''), utf: 'U+038F'}, // capital omega with tonos
-  'ΐ': {plain: 'ι', comb: ['ι', ac.oxia, ac.dia].join(''), utf: 'ι'}, // small iota with dialytika and tonos
+  'ΐ': {plain: ['ι', ac.dia].join(''), comb: ['ι', ac.oxia, ac.dia].join(''), utf: 'ι'}, // small iota with dialytika and tonos
 
-  'Ϊ': {plain: 'ι', comb: ['ι', ac.dia].join(''), utf: 'U+03AA'}, // capital iota with dialytika
-  'Ϋ': {plain: 'υ', comb: ['υ', ac.dia].join(''), utf: 'U+03AB'}, // capital upsilon with dialytika
+  'Ϊ': {plain: ['ι', ac.dia].join(''), comb: ['ι', ac.dia].join(''), utf: 'U+03AA'}, // capital iota with dialytika
+  'Ϋ': {plain: ['υ', ac.dia].join(''), comb: ['υ', ac.dia].join(''), utf: 'U+03AB'}, // capital upsilon with dialytika
   'ά': {plain: 'α', comb: ['α', ac.oxia].join(''), utf: 'U+03AC'}, // small alpha with tonos
   'έ': {plain: 'ε', comb: ['ε', ac.oxia].join(''), utf: 'U+03AD'}, // small epsilon with tonos
   'ή': {plain: 'η', comb: ['η', ac.oxia].join(''), utf: 'U+03AE'}, // small eta with tonos
   'ί': {plain: 'ι', comb: ['ι', ac.oxia].join(''), utf: 'U+03AF'}, // small iota with tonos
-  'ΰ': {plain: 'υ', comb: ['υ', ac.oxia, ac.dia].join(''), utf: 'U+03B0'}, // small upsilon with dialytika and tonos
+  'ΰ': {plain: ['υ', ac.dia].join(''), comb: ['υ', ac.oxia, ac.dia].join(''), utf: 'U+03B0'}, // small upsilon with dialytika and tonos
 
-  'ϊ': {plain: 'ι', comb: ['ι', ac.dia].join(''), utf: 'U+03CA'}, // small iota with dialytika
-  'ϋ': {plain: 'υ', comb: ['υ', ac.dia].join(''), utf: 'U+03CB'}, // small upsilon with dialytika
+  'ϊ': {plain: ['ι', ac.dia].join(''), comb: ['ι', ac.dia].join(''), utf: 'U+03CA'}, // small iota with dialytika
+  'ϋ': {plain: ['υ', ac.dia].join(''), comb: ['υ', ac.dia].join(''), utf: 'U+03CB'}, // small upsilon with dialytika
   'ό': {plain: 'ο', comb: ['ο', ac.oxia].join(''), utf: 'U+03CC'}, // small omicron with tonos
   'ύ': {plain: 'υ', comb: ['υ', ac.oxia].join(''), utf: 'U+03CD'}, // small upsilon with tonos
   'ώ': {plain: 'ω', comb: ['ω', ac.oxia].join(''), utf: 'U+03CE '}, // small omega with tonos
@@ -334,7 +336,5 @@ export const greek = {
   // ';': {plain: '', comb: [''].join(''), utf: 'U+037E'}, // question mark
 
   'Ϊ': {plain: 'ι', comb: ['ι', ac.dia].join(''), utf: 'U+03AA'}, // capital iota with dialytika
-  'Ϋ': {plain: 'υ', comb: ['υ', ac.dia].join(''), utf: 'U+03AB'}, // capital upsilon with dialytika
-  'ϊ': {plain: 'ι', comb: ['ι', ac.dia].join(''), utf: 'U+03CA'}, // small iota with dialytika
-  'ϋ': {plain: 'υ', comb: ['υ', ac.dia].join(''), utf: 'U+03CB'} // small upsilon with dialytika
+  'Ϋ': {plain: 'υ', comb: ['υ', ac.dia].join(''), utf: 'U+03AB'} // capital upsilon with dialytika
 }

@@ -2,12 +2,13 @@
 
 
 // import orthos from './index';
-import {comb, plain} from './index';
+import {combine, plaine} from './index';
 
 let wf = process.argv.slice(2)[0]
 let log = console.log
 
-let cmb = comb(wf);
-let pln = plain(wf);
+// let cmb = combine(wf)
+let pln = plaine(wf)
+let all = plaine(combine(wf))
 
-log('HERE', cmb, pln)
+log('HERE', pln, all)

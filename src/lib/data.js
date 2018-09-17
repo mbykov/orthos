@@ -65,6 +65,7 @@ export const simple = {
   'Ο': {utf: 'U+039F'}, // capital letter omicron
   'Π': {utf: 'U+03A0'}, // capital letter pi
   'Ρ': {utf: 'U+03A1'}, // capital letter rho
+  'S': {utf: 'U+XXXX'}, // fake capital letter final sigma
   'Σ': {utf: 'U+03A3'}, // capital letter sigma
   'Τ': {utf: 'U+03A4'}, // capital letter tau
   'Υ': {utf: 'U+03A5'}, // capital letter upsilon
@@ -336,5 +337,33 @@ export const greek = {
   // ';': {plain: '', comb: [''].join(''), utf: 'U+037E'}, // question mark
 
   'Ϊ': {plain: 'ι', comb: ['ι', ac.dia].join(''), utf: 'U+03AA'}, // capital iota with dialytika
-  'Ϋ': {plain: 'υ', comb: ['υ', ac.dia].join(''), utf: 'U+03AB'} // capital upsilon with dialytika
+  'Ϋ': {plain: 'υ', comb: ['υ', ac.dia].join(''), utf: 'U+03AB'}, // capital upsilon with dialytika
+
+  // non vowels
+  'Α': {plain: 'α', comb: 'α', utf: 'U+0391'}, // capital letter alpha
+  'Β': {plain: 'β', comb: 'β', utf: 'U+0392'}, // capital letter beta
+  'Γ': {plain: 'γ', comb: 'γ', utf: 'U+0393'}, // capital letter gamma
+  'Δ': {plain: 'δ', comb: 'δ', utf: 'U+0394'}, // capital letter delta
+  'Ε': {plain: 'ε', comb: 'ε', utf: 'U+0395'}, // capital letter epsilon
+  'Ζ': {plain: 'ζ', comb: 'ζ', utf: 'U+0396'}, // capital letter zeta
+  'Η': {plain: 'η', comb: 'η', utf: 'U+0397'}, // capital letter eta
+  'Θ': {plain: 'θ', comb: 'θ', utf: 'U+0398'}, // capital letter theta
+  'Ι': {plain: 'ι', comb: 'ι', utf: 'U+0399'}, // capital letter iota
+  'Κ': {plain: 'κ', comb: 'κ', utf: 'U+039A'}, // capital letter kappa
+  'Λ': {plain: 'λ', comb: 'λ', utf: 'U+039B'}, // capital letter lamda
+  'Μ': {plain: 'μ', comb: 'μ', utf: 'U+039C'}, // capital letter mu
+  'Ν': {plain: 'ν', comb: 'ν', utf: 'U+039D'}, // capital letter nu
+  'Ξ': {plain: 'ξ', comb: 'ξ', utf: 'U+039E'}, // capital letter xi
+  'Ο': {plain: 'ο', comb: 'ο', utf: 'U+039F'}, // capital letter omicron
+  'Π': {plain: 'π', comb: 'π', utf: 'U+03A0'}, // capital letter pi
+  'Ρ': {plain: 'ρ', comb: 'ρ', utf: 'U+03A1'}, // capital letter rho
+  'S': {plain: 'S', comb: 'S', utf: 'U+XXXX'}, // fake capital letter final sigma
+  'Σ': {plain: 'σ', comb: 'σ', utf: 'U+03A3'}, // capital letter sigma
+  'Τ': {plain: 'τ', comb: 'τ', utf: 'U+03A4'}, // capital letter tau
+  'Υ': {plain: 'υ', comb: 'υ', utf: 'U+03A5'}, // capital letter upsilon
+  'Φ': {plain: 'φ', comb: 'φ', utf: 'U+03A6'}, // capital letter phi
+  'Χ': {plain: 'χ', comb: 'χ', utf: 'U+03A7'}, // capital letter chi
+  'Ψ': {plain: 'ψ', comb: 'ψ', utf: 'U+03A8'}, // capital letter psi
+  'Ω': {plain: 'ω', comb: 'ω', utf: 'U+03A9'} // capital letter omega
+
 }

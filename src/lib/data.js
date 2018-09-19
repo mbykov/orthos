@@ -6,7 +6,6 @@ export const ac = {
   'varia': '\u0300',
   'peris': '\u0342',
   '': '',
-  '': '',
   'psili': '\u0313',
   'dasia': '\u0314',
   '': '',

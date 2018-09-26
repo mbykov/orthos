@@ -18,3 +18,5 @@ export function plain(wf) {
 export function oxia(wf) {
   return wf.split(ac.varia).join(ac.oxia).split(ac.varia_).join(ac.oxia)
 }
+
+export const accents = ac

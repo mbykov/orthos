@@ -17,7 +17,7 @@ export const ac = {
   '': ''
 }
 
-export const tobedel = [ac.varia, ac.oxia, ac.peris, ac.psili, ac.dasia, ac.ypo] // dialitika remains
+export const tobedel = [ac.varia, ac.oxia, ac.peris, ac.psili, ac.ypo] // dialitika remains // ac.dasia,
 
 export const simple = {
 

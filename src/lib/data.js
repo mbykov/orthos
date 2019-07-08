@@ -12,7 +12,7 @@ export const ac = {
   'dia': '\u0308',
   'dia-not-combined': '\u00A8',
   '': '',
-  'ypo': '\u0345',
+  'ypo': '\u0345', // sure
   'pros': '\u1FBE', // but I use ypo, correct?
   '': ''
 }
@@ -71,7 +71,10 @@ export const simple = {
   'Φ': {utf: 'U+03A6'}, // capital letter phi
   'Χ': {utf: 'U+03A7'}, // capital letter chi
   'Ψ': {utf: 'U+03A8'}, // capital letter psi
-  'Ω': {utf: 'U+03A9'} // capital letter omega
+  'Ω': {utf: 'U+03A9'}, // capital letter omega
+
+  'ͅ': {utf: 'U+0345'} // ypo
+
 }
 
 export const greek = {
@@ -306,6 +309,8 @@ export const greek = {
   'Ὼ': {plain: 'ω', comb: ['ω', ac.varia].join(''), utf: 'U+1FFA'}, // capital omega with varia
   'Ώ': {plain: 'ω', comb: ['ω', ac.oxia].join(''), utf: 'U+1FFB'}, // capital omega with oxia
   'ῼ': {plain: 'ω', comb: ['ω', ac.pros].join(''), utf: 'U+1FFC'}, // capital omega with prosgegrammeni
+
+  // 'ͅ': {plain: 'ͅ', comb: 'ͅ', utf: 'U+0345'}, // {utf: 'U+0345'}, // ypo
 
   // ========== TONOS ==
 

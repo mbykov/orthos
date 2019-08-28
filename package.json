@@ -1,6 +1,6 @@
 {
   "name": "orthos",
-  "version": "0.5.1",
+  "version": "0.6.0",
   "description": "convert to utf-8 combined ancient greek diacritics from precombined of all sorts",
   "main": "dist/index.js",
   "scripts": {

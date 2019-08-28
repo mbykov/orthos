@@ -26,13 +26,13 @@ string without stress symbols:
 string without any accent:
 
 ````javascript
-    let stripped = strip(sym)
+    let stripped = strip(combined)
 ````
 
 fix possible varia to oxia:
 
 ````javascript
-    let fixed = oxia(sym)
+    let fixed = oxia(combined)
 ````
 
 

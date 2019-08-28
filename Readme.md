@@ -8,27 +8,32 @@ convert to utf-8 combined ancient greek diacritics from precombined of all sorts
 ## API
 
 ````javascript
-    var orthos = require('./orthos');
+  import {oxia, comb, plain, strip} from 'orthos'
 ````
 
-three methods:
+methods:
 
-convert string to combined version
+convert string to combined version:
 
 ````javascript
-    let combined = orthos.toComb(rawStr)
+    let combined = comb(rawStr)
 ````
-get plain string, i.e. without only stress symbols
+string without stress symbols:
 
 ````javascript
-    let plain = orthos.plain(combined)
+    let plain = plain(combined)
 ````
-downcase symbol
+string without any accent:
 
 ````javascript
-    let downcased = orthos.dc(sym)
+    let stripped = strip(sym)
 ````
 
+fix possible varia to oxia:
+
+````javascript
+    let fixed = oxia(sym)
+````
 
 
 ## License

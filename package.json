@@ -1,41 +1,26 @@
 {
   "name": "orthos",
-  "version": "0.6.3",
+  "version": "0.7.0",
   "description": "convert to utf-8 combined ancient greek diacritics from precombined of all sorts",
   "main": "dist/index.js",
   "scripts": {
-    "start": "npm run build && node dist/run",
-    "prebuild": "npm run clean",
-    "build": "cross-env NODE_ENV=production babel -s true src -d dist",
-    "clean": "rm -rf dist",
-    "run": "node dist/run",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint src test"
+    "build": "babel src -d dist",
+    "start": "yarn run build && node dist/example.js"
   },
   "keywords": [
     "ancient greek",
     "node.js",
     "morphology"
   ],
-  "author": "Michael Bykov",
-  "license": " GPL-2.0-or-later",
-  "babel": {
-    "presets": [
-      "env"
-    ]
-  },
-  "files": [
-    "dist"
-  ],
-  "dependencies": {
-    "lodash": "^4.17.10"
-  },
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "cross-env": "^5.2.0"
-  },
-  "repository": {
+ "author": "Michael Bykov <m.bykov@gmail.com>",
+  "copyright": "© 2018-2020, Michael Bykov",
+   "license": " GPL-2.0-or-later",
+   "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1"
+   },
+ "repository": {
     "type": "git",
     "url": "http://github.com/mbykov/orthos.git"
   },

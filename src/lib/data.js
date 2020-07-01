@@ -1,20 +1,20 @@
-//
+'use strict'
 
 export const ac = {
   'oxia': '\u0301',
   'varia_': '\u0060',
   'varia': '\u0300',
   'peris': '\u0342',
-  '': '',
+  // '': '',
   'psili': '\u0313',
   'dasia': '\u0314',
-  '': '',
+  // '': '',
   'dia': '\u0308',
   'dia-not-combined': '\u00A8',
-  '': '',
+  // '': '',
   'ypo': '\u0345', // sure
-  'pros': '\u1FBE', // but I use ypo, correct?
-  '': ''
+  'pros': '\u1FBE', // but I use ypo
+  // '': ''
 }
 
 export const tobedel = [ac.varia, ac.oxia, ac.peris] // dialitika remains // ac.dasia, , ac.ypo // , ac.psili

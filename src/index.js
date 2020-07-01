@@ -1,7 +1,7 @@
 'use strict'
 
 const log = console.log
-import {ac, tobedel, greek, simple} from './lib/data'
+import {ac, tobedel, greek, simple} from './data'
 
 export function comb(wf) {
   return wf.split('').map(sym => { return (greek[sym]) ? greek[sym].comb : sym }).join('')

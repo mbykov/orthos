@@ -1,6 +1,6 @@
 {
   "name": "orthos",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "description": "convert to utf-8 combined ancient greek diacritics from precombined of all sorts",
   "main": "dist/index.js",
   "scripts": {
@@ -15,7 +15,10 @@
  "author": "Michael Bykov <m.bykov@gmail.com>",
   "copyright": "© 2018-2020, Michael Bykov",
    "license": " GPL-2.0-or-later",
-   "devDependencies": {
+  "files": [
+    "dist"
+  ],
+    "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.3.1"
